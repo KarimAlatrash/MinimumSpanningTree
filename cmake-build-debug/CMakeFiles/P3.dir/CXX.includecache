@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/karimalatrash/Documents/2A/ECE250/P3/Graph.cpp
+Graph.h
+/Users/karimalatrash/Documents/2A/ECE250/P3/Graph.h
+
+/Users/karimalatrash/Documents/2A/ECE250/P3/Graph.h
+VertexSet.h
+/Users/karimalatrash/Documents/2A/ECE250/P3/VertexSet.h
+
+/Users/karimalatrash/Documents/2A/ECE250/P3/PriorityQueue.cpp
+PriorityQueue.h
+/Users/karimalatrash/Documents/2A/ECE250/P3/PriorityQueue.h
+
+/Users/karimalatrash/Documents/2A/ECE250/P3/PriorityQueue.h
+
+/Users/karimalatrash/Documents/2A/ECE250/P3/Vertex.cpp
+Vertex.h
+/Users/karimalatrash/Documents/2A/ECE250/P3/Vertex.h
+limits
+-
+
+/Users/karimalatrash/Documents/2A/ECE250/P3/Vertex.h
+
+/Users/karimalatrash/Documents/2A/ECE250/P3/VertexSet.cpp
+VertexSet.h
+/Users/karimalatrash/Documents/2A/ECE250/P3/VertexSet.h
+
+/Users/karimalatrash/Documents/2A/ECE250/P3/VertexSet.h
+Vertex.h
+/Users/karimalatrash/Documents/2A/ECE250/P3/Vertex.h
+vector
+-
+
