@@ -8,14 +8,18 @@
 
 class Vertex {
 private:
-    double key_;
-    const unsigned int index; //stores the index of the current vertex in the adjacency matrix so it can be accessed
+    double key_=0;
+    unsigned int name; //stores the name of the current vertex in the adjacency matrix so it can be accessed
     Vertex* parent =nullptr;
 
 public:
-    Vertex(unsigned int key);
-    void setKey(double weight);
+    unsigned int degree = 0;
 
+    Vertex(unsigned int key);
+    void set_key(double weight);
+    double get_key();
+    unsigned int get_name();
+    Vertex &operator= (const Vertex &rhs_vertex);
 };
 
 

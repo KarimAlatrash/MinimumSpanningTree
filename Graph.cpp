@@ -26,6 +26,7 @@ void Graph::insert_edge(unsigned int key1, unsigned int key2, double weight) {
 
         V->insert_edge(key1, key2, weight);
         cout<<"success"<<endl;
+        edge_count+=2;
     }
     catch (illegal_exception& e){
         cout<<e.msg()<<endl;
@@ -40,6 +41,7 @@ void Graph::delete_edge(unsigned int key1, unsigned int key2) {
         if(V->edge_weight(key1, key2) != 0) {
             V->insert_edge(key1, key2, 0);
             cout<<"success"<<endl;
+            edge_count-=2;
         }
         else {
             cout<<"failure"<<endl;
@@ -68,4 +70,26 @@ bool Graph::is_adjacent(unsigned int key1, unsigned int key2, double weight) {
     }
 
 
+}
+
+unsigned int Graph::degree(unsigned int key) {
+    try {
+        if(0 > key || size_-1< key)
+            throw illegal_exception();
+        unsigned int key_degree = V->degree(key);
+        cout << "degree of " << key << " is" << key_degree <<endl;
+        return key_degree;
+    }
+    catch (illegal_exception& e){
+        cout<<e.msg()<<endl;
+    }
+}
+
+void Graph::print_edge_count() {
+    cout<<"edge count is "<<edge_count;
+}
+
+void Graph::clear_edges() {
+    V->clear_edges();
+    cout<<"sucess"<<endl;
 }

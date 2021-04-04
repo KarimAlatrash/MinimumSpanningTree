@@ -12,7 +12,7 @@ using namespace std;
 
 class VertexSet {
 private:
-    double* adjacency_matrix; //array of size*size to simulate a 2D array where index [i,j] = [i*size+j]
+    double* adjacency_matrix; //array of size*size to simulate a 2D array where name [i,j] = [i*size+j]
     vector<Vertex> element;
     unsigned int size_;
 public:
@@ -20,6 +20,8 @@ public:
     ~VertexSet();
     void insert_edge(unsigned int key1, unsigned int key2, double weight);
     double edge_weight(unsigned int key1, unsigned int key2);
+    unsigned int degree(unsigned int key);
+    void clear_edges();
 };
 
 
