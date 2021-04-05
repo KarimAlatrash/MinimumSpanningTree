@@ -19,17 +19,25 @@ VertexSet::~VertexSet() {
     delete[] adjacency_matrix;
 }
 
-void VertexSet::insert_edge(unsigned int key1, unsigned int key2, double weight) {
+bool VertexSet::insert_edge(unsigned int key1, unsigned int key2, double weight) {
+    double old_weight = adjacency_matrix[key1*size_ + key2];
     adjacency_matrix[key1*size_ + key2] = weight;
     adjacency_matrix[key2*size_ + key1] = weight;
-    if(weight != 0.0) {
+    if(weight != 0.0 && old_weight==0.0) {
+        element[key1].add_adjacent_vertex(&element[key2]);
+        element[key2].add_adjacent_vertex(&element[key1]);
         element[key1].degree++;
         element[key2].degree++;
+        return true;
     }
-    else {
+    else if(weight==0.0) {
+        element[key1].remove_adjacent_vertex(key2);
+        element[key2].remove_adjacent_vertex(key1);
         element[key1].degree--;
         element[key2].degree--;
+        return true;
     }
+    return false;
 
 }
 
@@ -44,5 +52,17 @@ unsigned int VertexSet::degree(unsigned int key) {
 void VertexSet::clear_edges() {
     delete[] adjacency_matrix;
     adjacency_matrix = new double[size_*size_]{0};
+    //creates an array of vertices
+    for(int i{0}; i<size_; i++) {
+        element[i].set_degree(0);
+    }
+
+}
+
+Vertex *VertexSet::get_element_by_name(unsigned int name) {
+    if(name >element.size()-1) {
+        return nullptr;
+    }
+    return &element[name];
 }
 

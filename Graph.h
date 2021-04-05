@@ -22,6 +22,7 @@ public:
     unsigned int degree(unsigned int key);
     void print_edge_count();
     void clear_edges();
+    double mst_weight(unsigned int source_key);
 
 };
 
