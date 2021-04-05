@@ -29,7 +29,7 @@ public:
     void set_member_of_pq(bool status) {
         member_of_pq = status;
     }
-    bool is_member_of_pq() {
+    bool is_pq_member() {
         return member_of_pq;
     }
     void set_name(unsigned int name_) {

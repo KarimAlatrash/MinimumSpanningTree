@@ -9,32 +9,42 @@
 /Users/karimalatrash/Documents/2A/ECE250/P3/Graph.cpp
 Graph.h
 /Users/karimalatrash/Documents/2A/ECE250/P3/Graph.h
+PriorityQueue.h
+/Users/karimalatrash/Documents/2A/ECE250/P3/PriorityQueue.h
+illegal_exception.h
+/Users/karimalatrash/Documents/2A/ECE250/P3/illegal_exception.h
+iostream
+-
+iomanip
+-
+limits
+-
 
 /Users/karimalatrash/Documents/2A/ECE250/P3/Graph.h
 VertexSet.h
 /Users/karimalatrash/Documents/2A/ECE250/P3/VertexSet.h
 
-/Users/karimalatrash/Documents/2A/ECE250/P3/PriorityQueue.cpp
-PriorityQueue.h
 /Users/karimalatrash/Documents/2A/ECE250/P3/PriorityQueue.h
-
-/Users/karimalatrash/Documents/2A/ECE250/P3/PriorityQueue.h
-
-/Users/karimalatrash/Documents/2A/ECE250/P3/Vertex.cpp
+vector
+-
 Vertex.h
 /Users/karimalatrash/Documents/2A/ECE250/P3/Vertex.h
-limits
--
 
 /Users/karimalatrash/Documents/2A/ECE250/P3/Vertex.h
-
-/Users/karimalatrash/Documents/2A/ECE250/P3/VertexSet.cpp
-VertexSet.h
-/Users/karimalatrash/Documents/2A/ECE250/P3/VertexSet.h
+vector
+-
 
 /Users/karimalatrash/Documents/2A/ECE250/P3/VertexSet.h
 Vertex.h
 /Users/karimalatrash/Documents/2A/ECE250/P3/Vertex.h
 vector
 -
+
+/Users/karimalatrash/Documents/2A/ECE250/P3/illegal_exception.h
+
+/Users/karimalatrash/Documents/2A/ECE250/P3/mstprimtest.cpp
+iostream
+-
+Graph.h
+/Users/karimalatrash/Documents/2A/ECE250/P3/Graph.h
 

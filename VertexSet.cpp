@@ -59,7 +59,7 @@ void VertexSet::clear_edges() {
 
 }
 
-Vertex *VertexSet::get_element_by_name(unsigned int name) {
+Vertex *VertexSet::get_element(unsigned int name) {
     if(name >element.size()-1) {
         return nullptr;
     }

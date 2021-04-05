@@ -3,11 +3,14 @@
 
 CMakeFiles/P3.dir/Graph.cpp.o: ../Graph.cpp
 CMakeFiles/P3.dir/Graph.cpp.o: ../Graph.h
+CMakeFiles/P3.dir/Graph.cpp.o: ../PriorityQueue.h
 CMakeFiles/P3.dir/Graph.cpp.o: ../Vertex.h
 CMakeFiles/P3.dir/Graph.cpp.o: ../VertexSet.h
+CMakeFiles/P3.dir/Graph.cpp.o: ../illegal_exception.h
 
 CMakeFiles/P3.dir/PriorityQueue.cpp.o: ../PriorityQueue.cpp
 CMakeFiles/P3.dir/PriorityQueue.cpp.o: ../PriorityQueue.h
+CMakeFiles/P3.dir/PriorityQueue.cpp.o: ../Vertex.h
 
 CMakeFiles/P3.dir/Vertex.cpp.o: ../Vertex.cpp
 CMakeFiles/P3.dir/Vertex.cpp.o: ../Vertex.h
@@ -15,6 +18,13 @@ CMakeFiles/P3.dir/Vertex.cpp.o: ../Vertex.h
 CMakeFiles/P3.dir/VertexSet.cpp.o: ../Vertex.h
 CMakeFiles/P3.dir/VertexSet.cpp.o: ../VertexSet.cpp
 CMakeFiles/P3.dir/VertexSet.cpp.o: ../VertexSet.h
+CMakeFiles/P3.dir/VertexSet.cpp.o: ../illegal_exception.h
 
-CMakeFiles/P3.dir/main.cpp.o: ../main.cpp
+CMakeFiles/P3.dir/illegal_exception.cpp.o: ../illegal_exception.cpp
+CMakeFiles/P3.dir/illegal_exception.cpp.o: ../illegal_exception.h
+
+CMakeFiles/P3.dir/mstprimtest.cpp.o: ../Graph.h
+CMakeFiles/P3.dir/mstprimtest.cpp.o: ../Vertex.h
+CMakeFiles/P3.dir/mstprimtest.cpp.o: ../VertexSet.h
+CMakeFiles/P3.dir/mstprimtest.cpp.o: ../mstprimtest.cpp
 

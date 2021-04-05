@@ -4,11 +4,14 @@
 CMakeFiles/P3.dir/Graph.cpp.o
  /Users/karimalatrash/Documents/2A/ECE250/P3/Graph.cpp
  /Users/karimalatrash/Documents/2A/ECE250/P3/Graph.h
+ /Users/karimalatrash/Documents/2A/ECE250/P3/PriorityQueue.h
  /Users/karimalatrash/Documents/2A/ECE250/P3/Vertex.h
  /Users/karimalatrash/Documents/2A/ECE250/P3/VertexSet.h
+ /Users/karimalatrash/Documents/2A/ECE250/P3/illegal_exception.h
 CMakeFiles/P3.dir/PriorityQueue.cpp.o
  /Users/karimalatrash/Documents/2A/ECE250/P3/PriorityQueue.cpp
  /Users/karimalatrash/Documents/2A/ECE250/P3/PriorityQueue.h
+ /Users/karimalatrash/Documents/2A/ECE250/P3/Vertex.h
 CMakeFiles/P3.dir/Vertex.cpp.o
  /Users/karimalatrash/Documents/2A/ECE250/P3/Vertex.cpp
  /Users/karimalatrash/Documents/2A/ECE250/P3/Vertex.h
@@ -16,5 +19,12 @@ CMakeFiles/P3.dir/VertexSet.cpp.o
  /Users/karimalatrash/Documents/2A/ECE250/P3/Vertex.h
  /Users/karimalatrash/Documents/2A/ECE250/P3/VertexSet.cpp
  /Users/karimalatrash/Documents/2A/ECE250/P3/VertexSet.h
-CMakeFiles/P3.dir/main.cpp.o
- /Users/karimalatrash/Documents/2A/ECE250/P3/main.cpp
+ /Users/karimalatrash/Documents/2A/ECE250/P3/illegal_exception.h
+CMakeFiles/P3.dir/illegal_exception.cpp.o
+ /Users/karimalatrash/Documents/2A/ECE250/P3/illegal_exception.cpp
+ /Users/karimalatrash/Documents/2A/ECE250/P3/illegal_exception.h
+CMakeFiles/P3.dir/mstprimtest.cpp.o
+ /Users/karimalatrash/Documents/2A/ECE250/P3/Graph.h
+ /Users/karimalatrash/Documents/2A/ECE250/P3/Vertex.h
+ /Users/karimalatrash/Documents/2A/ECE250/P3/VertexSet.h
+ /Users/karimalatrash/Documents/2A/ECE250/P3/mstprimtest.cpp

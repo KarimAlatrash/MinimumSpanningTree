@@ -53,6 +53,7 @@ bool PriorityQueue::is_empty() {
 }
 
 //change this to be optimized for a PQ
+/*
 Vertex* PriorityQueue::find_vertex(unsigned int name) {
     for(unsigned int i{0}; i<pq_size; i++) {
         if(name == pq[i]->get_name() )
@@ -71,7 +72,7 @@ bool PriorityQueue::is_member(unsigned int name) {
 
 void PriorityQueue::modify_key(unsigned int name, double weight) {
 
-}
+}*/
 
 void PriorityQueue::rebuild_heap() {
     for(unsigned int i{(pq_size-1)/2}; i>=0&&i<pq_size; --i) {

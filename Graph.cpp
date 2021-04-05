@@ -97,7 +97,7 @@ void Graph::print_edge_count() {
 void Graph::clear_edges() {
     V->clear_edges();
     edge_count = 0;
-    cout<<"sucess"<<endl;
+    cout<<"success"<<endl;
 }
 
 double Graph::mst_weight(unsigned int source_key) {
@@ -113,8 +113,10 @@ double Graph::mst_weight(unsigned int source_key) {
     double total_weight=0;
     //create a new array to be passed by reference to the priority queue
     Vertex** mst_tree = new Vertex*[size_];
+
     for(int i{0}; i<size_; i++) {
-        mst_tree[i] = V->get_element_by_name(i);
+        //sets members of array to point to elements in the vertex set
+        mst_tree[i] = V->get_element(i);
         mst_tree[i]->set_key(numeric_limits<double>::infinity() );
         mst_tree[i]->set_parent(nullptr);
         mst_tree[i]->set_member_of_pq(true);
@@ -133,10 +135,10 @@ double Graph::mst_weight(unsigned int source_key) {
             //this should work because we are directly manipulating the array stored here
             if(edge_weight > 0.0 &&
                 edge_weight < current_min->get_adjacent_vertex(i)->get_key() &&
-                current_min->get_adjacent_vertex(i)->is_member_of_pq()) {
+                    current_min->get_adjacent_vertex(i)->is_pq_member()) {
 
-                V->get_element_by_name( current_min->get_adjacent_vertex(i)->get_name() )->set_key(edge_weight);//mst_tree[i].set_key(edge_weight);
-                V->get_element_by_name( current_min->get_adjacent_vertex(i)->get_name() )->set_parent(current_min);//mst_tree[i].set_parent(current_min);
+                V->get_element(current_min->get_adjacent_vertex(i)->get_name())->set_key(edge_weight);//mst_tree[i].set_key(edge_weight);
+                V->get_element(current_min->get_adjacent_vertex(i)->get_name())->set_parent(current_min);//mst_tree[i].set_parent(current_min);
                 mst_pq.rebuild_heap(); //rebuilds min heap
             }
         }
@@ -150,5 +152,6 @@ double Graph::mst_weight(unsigned int source_key) {
         cout << "not connected" <<endl;
     }
 
+    delete[] mst_tree;
     return total_weight;
 }

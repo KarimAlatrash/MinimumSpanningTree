@@ -278,32 +278,32 @@ illegal_exception.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/P3.dir/build.make CMakeFiles/P3.dir/illegal_exception.cpp.s
 .PHONY : illegal_exception.cpp.s
 
-main.o: main.cpp.o
+mstprimtest.o: mstprimtest.cpp.o
 
-.PHONY : main.o
+.PHONY : mstprimtest.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P3.dir/build.make CMakeFiles/P3.dir/main.cpp.o
-.PHONY : main.cpp.o
+mstprimtest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P3.dir/build.make CMakeFiles/P3.dir/mstprimtest.cpp.o
+.PHONY : mstprimtest.cpp.o
 
-main.i: main.cpp.i
+mstprimtest.i: mstprimtest.cpp.i
 
-.PHONY : main.i
+.PHONY : mstprimtest.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P3.dir/build.make CMakeFiles/P3.dir/main.cpp.i
-.PHONY : main.cpp.i
+mstprimtest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P3.dir/build.make CMakeFiles/P3.dir/mstprimtest.cpp.i
+.PHONY : mstprimtest.cpp.i
 
-main.s: main.cpp.s
+mstprimtest.s: mstprimtest.cpp.s
 
-.PHONY : main.s
+.PHONY : mstprimtest.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P3.dir/build.make CMakeFiles/P3.dir/main.cpp.s
-.PHONY : main.cpp.s
+mstprimtest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P3.dir/build.make CMakeFiles/P3.dir/mstprimtest.cpp.s
+.PHONY : mstprimtest.cpp.s
 
 # Help Target
 help:
@@ -329,9 +329,9 @@ help:
 	@echo "... illegal_exception.o"
 	@echo "... illegal_exception.i"
 	@echo "... illegal_exception.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... mstprimtest.o"
+	@echo "... mstprimtest.i"
+	@echo "... mstprimtest.s"
 .PHONY : help
 
 

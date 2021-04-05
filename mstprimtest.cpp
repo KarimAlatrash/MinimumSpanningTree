@@ -3,7 +3,7 @@
 using namespace std;
 int main() {
     string line;
-    Graph* grph;
+    Graph* grph = nullptr;
 
     while(true ) {
         if(cin.eof() )
@@ -56,6 +56,8 @@ int main() {
         }
 
     }
+
+    delete grph;
 
     return 0;
 }

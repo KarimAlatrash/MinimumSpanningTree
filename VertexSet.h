@@ -22,7 +22,7 @@ public:
     double edge_weight(unsigned int key1, unsigned int key2);
     unsigned int degree(unsigned int key);
     void clear_edges();
-    Vertex* get_element_by_name(unsigned int name);
+    Vertex* get_element(unsigned int name);
 };
 
 
