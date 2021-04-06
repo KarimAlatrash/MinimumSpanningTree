@@ -19,12 +19,16 @@ public:
     unsigned int degree = 0;
 
     Vertex(unsigned int key);
+    ~Vertex();
     void set_key(double weight);
     double get_key();
     unsigned int get_name();
     void add_adjacent_vertex(Vertex* new_adjacency);
     void remove_adjacent_vertex(unsigned int name);
     Vertex* get_adjacent_vertex(unsigned int index);
+    void clear_adjacency(){
+        adjacency_list.clear();
+    }
 
     void set_member_of_pq(bool status) {
         member_of_pq = status;

@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/karimalatrash/Documents/2A/ECE250/P3/Vertex.cpp" "/Users/karimalatrash/Documents/2A/ECE250/P3/cmake-build-debug/CMakeFiles/P3.dir/Vertex.cpp.o"
   "/Users/karimalatrash/Documents/2A/ECE250/P3/VertexSet.cpp" "/Users/karimalatrash/Documents/2A/ECE250/P3/cmake-build-debug/CMakeFiles/P3.dir/VertexSet.cpp.o"
   "/Users/karimalatrash/Documents/2A/ECE250/P3/illegal_exception.cpp" "/Users/karimalatrash/Documents/2A/ECE250/P3/cmake-build-debug/CMakeFiles/P3.dir/illegal_exception.cpp.o"
-  "/Users/karimalatrash/Documents/2A/ECE250/P3/main.cpp" "/Users/karimalatrash/Documents/2A/ECE250/P3/cmake-build-debug/CMakeFiles/P3.dir/main.cpp.o"
+  "/Users/karimalatrash/Documents/2A/ECE250/P3/mstprimtest.cpp" "/Users/karimalatrash/Documents/2A/ECE250/P3/cmake-build-debug/CMakeFiles/P3.dir/mstprimtest.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

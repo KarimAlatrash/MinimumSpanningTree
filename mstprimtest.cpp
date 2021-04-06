@@ -5,6 +5,7 @@ int main() {
     string line;
     Graph* grph = nullptr;
 
+
     while(true ) {
         if(cin.eof() )
             break;

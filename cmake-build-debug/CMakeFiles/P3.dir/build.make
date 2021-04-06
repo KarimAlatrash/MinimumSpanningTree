@@ -77,18 +77,18 @@ include CMakeFiles/P3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/P3.dir/flags.make
 
-CMakeFiles/P3.dir/main.cpp.o: CMakeFiles/P3.dir/flags.make
-CMakeFiles/P3.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karimalatrash/Documents/2A/ECE250/P3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/P3.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/P3.dir/main.cpp.o -c /Users/karimalatrash/Documents/2A/ECE250/P3/main.cpp
+CMakeFiles/P3.dir/mstprimtest.cpp.o: CMakeFiles/P3.dir/flags.make
+CMakeFiles/P3.dir/mstprimtest.cpp.o: ../mstprimtest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karimalatrash/Documents/2A/ECE250/P3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/P3.dir/mstprimtest.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/P3.dir/mstprimtest.cpp.o -c /Users/karimalatrash/Documents/2A/ECE250/P3/mstprimtest.cpp
 
-CMakeFiles/P3.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/P3.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karimalatrash/Documents/2A/ECE250/P3/main.cpp > CMakeFiles/P3.dir/main.cpp.i
+CMakeFiles/P3.dir/mstprimtest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/P3.dir/mstprimtest.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karimalatrash/Documents/2A/ECE250/P3/mstprimtest.cpp > CMakeFiles/P3.dir/mstprimtest.cpp.i
 
-CMakeFiles/P3.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P3.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karimalatrash/Documents/2A/ECE250/P3/main.cpp -o CMakeFiles/P3.dir/main.cpp.s
+CMakeFiles/P3.dir/mstprimtest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P3.dir/mstprimtest.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karimalatrash/Documents/2A/ECE250/P3/mstprimtest.cpp -o CMakeFiles/P3.dir/mstprimtest.cpp.s
 
 CMakeFiles/P3.dir/PriorityQueue.cpp.o: CMakeFiles/P3.dir/flags.make
 CMakeFiles/P3.dir/PriorityQueue.cpp.o: ../PriorityQueue.cpp
@@ -157,7 +157,7 @@ CMakeFiles/P3.dir/illegal_exception.cpp.s: cmake_force
 
 # Object files for target P3
 P3_OBJECTS = \
-"CMakeFiles/P3.dir/main.cpp.o" \
+"CMakeFiles/P3.dir/mstprimtest.cpp.o" \
 "CMakeFiles/P3.dir/PriorityQueue.cpp.o" \
 "CMakeFiles/P3.dir/Graph.cpp.o" \
 "CMakeFiles/P3.dir/Vertex.cpp.o" \
@@ -167,7 +167,7 @@ P3_OBJECTS = \
 # External object files for target P3
 P3_EXTERNAL_OBJECTS =
 
-P3: CMakeFiles/P3.dir/main.cpp.o
+P3: CMakeFiles/P3.dir/mstprimtest.cpp.o
 P3: CMakeFiles/P3.dir/PriorityQueue.cpp.o
 P3: CMakeFiles/P3.dir/Graph.cpp.o
 P3: CMakeFiles/P3.dir/Vertex.cpp.o

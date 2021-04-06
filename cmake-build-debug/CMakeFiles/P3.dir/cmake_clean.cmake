@@ -4,7 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/P3.dir/Vertex.cpp.o"
   "CMakeFiles/P3.dir/VertexSet.cpp.o"
   "CMakeFiles/P3.dir/illegal_exception.cpp.o"
-  "CMakeFiles/P3.dir/main.cpp.o"
+  "CMakeFiles/P3.dir/mstprimtest.cpp.o"
   "P3"
   "P3.pdb"
 )

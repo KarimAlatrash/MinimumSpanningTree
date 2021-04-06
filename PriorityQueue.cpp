@@ -11,21 +11,23 @@ Vertex* PriorityQueue::extract_min() {
     pq[pq_size-1] = min;
     pq_size--;
     min->set_member_of_pq(false);
-    //heapify(0);
-    rebuild_heap();
+    if(pq_size != 0)
+        heapify(0);
+    //build_heap();
     return min;
 }
 
 //heapify to create min heap
 void PriorityQueue::heapify(unsigned int index) {
-    unsigned int left_child = 2*index;
-    unsigned int right_child = 2*index+1;
+    unsigned int left_child = 2*index+1;
+    unsigned int right_child = 2*index+2;
     unsigned int smallest_index = index;
-    if(left_child < pq_size-1 && pq[left_child]->get_key() < pq[index]->get_key() ) {
+
+    if(left_child < pq_size && pq[left_child]->get_key() < pq[smallest_index]->get_key() && pq[left_child]->is_pq_member()) {
         smallest_index = left_child;
     }
 
-    if(right_child < pq_size && pq[right_child]->get_key() < pq[smallest_index]->get_key() ) {
+    if(right_child <= pq_size && pq[right_child]->get_key() < pq[smallest_index]->get_key() && pq[right_child]->is_pq_member()) {
         smallest_index = right_child;
     }
     if(smallest_index != index) {
@@ -42,7 +44,7 @@ void PriorityQueue::heapify(unsigned int index) {
 PriorityQueue::PriorityQueue(unsigned int size, Vertex **element_array) {
     pq_size = size;
     pq = element_array;
-    rebuild_heap();
+    build_heap();
 }
 
 bool PriorityQueue::is_empty() {
@@ -74,8 +76,8 @@ void PriorityQueue::modify_key(unsigned int name, double weight) {
 
 }*/
 
-void PriorityQueue::rebuild_heap() {
-    for(unsigned int i{(pq_size-1)/2}; i>=0&&i<pq_size; --i) {
+void PriorityQueue::build_heap() {
+    for(unsigned int i{(pq_size)/2}; i>=0 && i<pq_size; --i) {
         heapify(i);
     }
 }

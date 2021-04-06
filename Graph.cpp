@@ -25,11 +25,12 @@ void Graph::insert_edge(unsigned int key1, unsigned int key2, double weight) {
     try {
         if( (0 > key1 || size_-1< key1) || (0 > key2 || size_-1< key2) || weight <= 0.0 || key1 == key2)
             throw illegal_exception();
-
-        bool new_edge = V->insert_edge(key1, key2, weight);
-        if(new_edge)
-            edge_count+=2;
-        cout<<"success"<<endl;
+        else {
+            bool new_edge = V->insert_edge(key1, key2, weight);
+            if (new_edge)
+                edge_count += 2;
+            cout << "success" << endl;
+        }
 
     }
     catch (illegal_exception& e){
@@ -113,7 +114,7 @@ double Graph::mst_weight(unsigned int source_key) {
     double total_weight=0;
     //create a new array to be passed by reference to the priority queue
     Vertex** mst_tree = new Vertex*[size_];
-
+    //Vertex* mst_tree[11];
     for(int i{0}; i<size_; i++) {
         //sets members of array to point to elements in the vertex set
         mst_tree[i] = V->get_element(i);
@@ -123,28 +124,31 @@ double Graph::mst_weight(unsigned int source_key) {
     }
 
     mst_tree[source_key]->set_key(0.0);
-    PriorityQueue mst_pq{size_, mst_tree};
-    while(!mst_pq.is_empty()) {
+    PriorityQueue mst_PQ{size_, mst_tree};
+
+    while(!mst_PQ.is_empty()) {
         //extracts a pointer which will be the new last element in mst_tree
-        Vertex* current_min = mst_pq.extract_min();
+        Vertex* current_min = mst_PQ.extract_min();
         total_weight += current_min->get_key();
 
         //only loops through current elements of the pq, we would have to do this check anyways
         for(int i{0}; i<current_min->degree; i++) {
-            unsigned int edge_weight = V->edge_weight(current_min->get_name(), current_min->get_adjacent_vertex(i)->get_name());
-            //this should work because we are directly manipulating the array stored here
-            if(edge_weight > 0.0 &&
-                edge_weight < current_min->get_adjacent_vertex(i)->get_key() &&
-                    current_min->get_adjacent_vertex(i)->is_pq_member()) {
 
-                V->get_element(current_min->get_adjacent_vertex(i)->get_name())->set_key(edge_weight);//mst_tree[i].set_key(edge_weight);
-                V->get_element(current_min->get_adjacent_vertex(i)->get_name())->set_parent(current_min);//mst_tree[i].set_parent(current_min);
-                mst_pq.rebuild_heap(); //rebuilds min heap
+            Vertex* v = current_min->get_adjacent_vertex(i); //returns pointer to vertex in element list
+            double edge_weight = V->edge_weight(current_min->get_name(), v->get_name());
+            //this should work because we are directly manipulating the array stored here
+            if(v->is_pq_member() && edge_weight < v->get_key() ) {
+                v->set_key(edge_weight);
+                //mst_PQ.heapify(0);
+                mst_PQ.build_heap();
+                v->set_parent(current_min);
             }
         }
 
 
     }
+
+
     if(total_weight != std::numeric_limits<double>::infinity() ) {
         cout<<"mst "<<  std::fixed << std::setprecision(2) << total_weight <<endl;
     }

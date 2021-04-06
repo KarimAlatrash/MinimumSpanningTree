@@ -47,18 +47,24 @@ Vertex *Vertex::get_parent() {
     return parent;
 }
 void Vertex::add_adjacent_vertex(Vertex *new_adjacency) {
+    if(adjacency_list.size() >= 11){
+        return;
+    }
     adjacency_list.push_back(new_adjacency);
 }
 void Vertex::remove_adjacent_vertex(unsigned int name) {
     for(int i {0}; i<adjacency_list.size(); i++) {
-        if(adjacency_list[i]->name == name) {
+        if(adjacency_list[i]->get_name() == name) {
             adjacency_list.erase(adjacency_list.begin()+i);
-            return;
         }
     }
 }
 
 Vertex *Vertex::get_adjacent_vertex(unsigned int index) {
     return adjacency_list[index];
+}
+
+Vertex::~Vertex() {
+
 }
 

@@ -18,7 +18,7 @@ public:
     Vertex* extract_min();
     //void insert(Vertex );
     bool is_empty();
-    void rebuild_heap();
+    void build_heap();
     unsigned int current_size () {
         return pq_size;
     }
